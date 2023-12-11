@@ -46,8 +46,8 @@ app.use((err, req, res, next) => {
     res.status(statusCode).json({ error: message });
 });
 
-app.listen(3005, ()=> {
-    console.log("Listenting on port 3005");
-})
+// app.listen(3005, ()=> {
+//     console.log("Listenting on port 3005");
+// })
 
-// export const handler = serverless(app);
+export const handler = serverless(app);
